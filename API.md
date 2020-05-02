@@ -78,10 +78,10 @@
 - payload :  
 ```json
 {  
-	"eid" :"企业id"，
+	"eid" :"企业id",
     "type": "企业类型",
-    "oamCompany": "运维公司"，
-	"level"："餐饮级别A/B/C"，企业用户不可修改，环保部门可以
+    "oamCompany": "运维公司",
+	"level":"餐饮级别A/B/C",企业用户不可修改,环保部门可以
 	"area":"地区"
 }
 ```
@@ -129,7 +129,7 @@
 ```json{
 {
     "eid": "企业id ",
-	"equId": "设施id 可以传多个以‘，’分隔 或者传单个id",
+	"equId": "设施id 可以传多个以‘,’分隔 或者传单个id",
 }
 ```
 ---
@@ -142,7 +142,7 @@ socket长连接
 - payload :
 ```json{
     "eid": "账号必须",
-	"startTime":"起始时间设默认时间"，
+	"startTime":"起始时间设默认时间",
 	"endTime":"结束时间至今"
 	"isRegular":"是否正常0正常 1 不正常"
 }
@@ -198,7 +198,7 @@ socket长连接
 ```json
 {
     "eid": "企业账号必传",
-	"equId":"设备账号选传"，
+	"equId":"设备账号选传",
 	"startTime":"开始时间 不选传个默认值"
 	"endTime":"结束时间不选 传至今"
 }
@@ -226,7 +226,7 @@ socket长连接
 ```json
 {
     "eid": "企业账号必传",
-	"equId":"设备账号选传"，
+	"equId":"设备账号选传",
 	"cleanTime":"开始时间 不选传当前时间"
 	"reason":"清洗原因选传"
 }
@@ -252,9 +252,9 @@ socket长连接
 ```json
 {
     "eid": "企业账号必传",
-	"equId":"设备账号选传"，
-	"startTime":"开始时间 不选传个默认值"，
-	"endTime":"结束时间不选 传至今"，
+	"equId":"设备账号选传",
+	"startTime":"开始时间 不选传个默认值",
+	"endTime":"结束时间不选 传至今",
 	"isdeal":"是否处理完毕 0 未处理 1 处理 2都要"
 	}
 ```
@@ -281,9 +281,9 @@ socket长连接
 ```json
 {
     "eid": "企业账号必传",
-	"equId":"设备账号选传"，
+	"equId":"设备账号选传",
 	"abnormalReason": "异常原因",
-	"dealTime":"处理时间不选 传当前时间"，
+	"dealTime":"处理时间不选 传当前时间",
 	}
 ```
 - return :
@@ -351,7 +351,7 @@ socket长连接
         "level": "A",
         "equNum": "2",
         "area": "黑龙江省",
-	}，
+	},
 	{	"eid": "001",
         "type": "类型",
         "name": "餐饮1",
@@ -370,12 +370,12 @@ socket长连接
 - payload :  
 ```json
 {  
-	"eid" :"企业id"，
+	"eid" :"企业id",
     "type": "企业类型",
 	"name":"企业名称"
-    "oamCompany": "运维公司"，
-	"level"："餐饮级别A/B/C"，
-	"area":"地区"，
+    "oamCompany": "运维公司",
+	"level":"餐饮级别A/B/C",
+	"area":"地区",
 	"password":"密码"
 }
 ```
@@ -426,8 +426,8 @@ socket长连接
 ```json
 {
     "environmentalId": "环保人员id 选传",
-	"startTime":"开始时间 不选传个默认值"，
-	"endTime":"结束时间不选 传至今"，
+	"startTime":"开始时间 不选传个默认值",
+	"endTime":"结束时间不选 传至今",
 	}
 ```
 - return :
@@ -445,6 +445,4 @@ socket长连接
         "lawEnforcementResult": "执法结果",
     }
 }
-
-
 
