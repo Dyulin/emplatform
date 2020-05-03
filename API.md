@@ -441,6 +441,7 @@ socket长连接
 	"data": {
         "ename": "被监督企业名称",
         "eid": "被监督企业id",
+	"envName":"执法部门名称",	
         "time": "执法时间",
         "lawEnforcementResult": "执法结果",
     }
