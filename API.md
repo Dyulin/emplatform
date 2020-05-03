@@ -239,7 +239,7 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data": null
+	"data":null
 }
 ```
 ### 1.4.3 待清洗消息提醒
