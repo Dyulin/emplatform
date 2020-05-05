@@ -68,7 +68,7 @@
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":null
+	 "data": {}
 }
 ```
 ---
@@ -81,7 +81,7 @@
 	"eid" :"企业id",
     "type": "企业类型",
     "oamCompany": "运维公司",
-	"level":"餐饮级别A/B/C",企业用户不可修改,环保部门可以
+	"level":"餐饮级别A/B/C,企业用户不可修改,环保部门可以"
 	"area":"地区"
 }
 ```
