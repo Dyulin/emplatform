@@ -252,7 +252,7 @@ socket长连接
 - payload :
 ```json
 {
-    "eid": "企业账号必传",
+    "eid": "企业账号必传 可多传，号分隔",
 	"equId":"设备账号选传",
 	"startTime":"开始时间 不选传个默认值",
 	"endTime":"结束时间不选 传至今",
@@ -272,7 +272,9 @@ socket长连接
         "eid": "企业id",
         "equId": "设施id",
         "abnormalReason": "异常原因",
-		"isdeal":"是否处理完毕 同上"
+	"isdeal":"是否处理完毕 同上"
+	"createTime":"发生时间"，
+	"dealTime":"当未处理时为0 处理时间"	
     }
 }
 ```
