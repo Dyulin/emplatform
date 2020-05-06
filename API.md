@@ -288,7 +288,8 @@ socket长连接
 - payload :
 ```json
 {	
-	 “recordId”:"异常记录编号",
+	“recordId”:"异常记录编号",
+	"equId": "设施id",
 	"abnormalReason": "异常原因 选传",
 	"dealTime":"处理时间选传 需在异常发生时间之后 默认当前时间",
 	}
