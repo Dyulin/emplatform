@@ -272,6 +272,7 @@ socket长连接
         "returnUserMessage": "请求成功"
     }
 	"data": {
+	“recordId”:"异常记录编号",
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
@@ -286,9 +287,8 @@ socket长连接
 - POST  /abnormal/dealAbnormal
 - payload :
 ```json
-{
-    "eid": "企业账号必传",
-	"equId":"设备账号必传",
+{	
+	 “recordId”:"异常记录编号",
 	"abnormalReason": "异常原因 选传",
 	"dealTime":"处理时间选传 需在异常发生时间之后 默认当前时间",
 	}
