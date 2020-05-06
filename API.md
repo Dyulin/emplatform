@@ -288,9 +288,9 @@ socket长连接
 ```json
 {
     "eid": "企业账号必传",
-	"equId":"设备账号选传",
-	"abnormalReason": "异常原因",
-	"dealTime":"处理时间不选 传当前时间",
+	"equId":"设备账号必传",
+	"abnormalReason": "异常原因 选传",
+	"dealTime":"处理时间选传 需在异常发生时间之后 默认当前时间",
 	}
 ```
 - return :
