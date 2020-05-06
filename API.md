@@ -53,11 +53,11 @@
 ---
 # 1企业用户
 ## 1.1 登录
-- POST  /enterprise/login  
+- POST  /basic/login  
 - payload :  
 ```json
 {  
-    "eid": "账号",
+    "account": "账号",
     "password": "密码"  
 }
 ```
@@ -69,7 +69,11 @@
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	 "data": {}
+	 "data": 
+	 {
+	 "account":"账号"，
+	 "role":"0 企业用户 1 环保部门"
+	 }
 }
 ```
 ---
@@ -303,12 +307,12 @@ socket长连接
 ---
 # 2 环保部门模块
 ## 2.1 登录
-- POST  /environmental/login  
+- POST  /basic/login  
 - payload :  
 ```json
 {  
-    "environmentalId": "账号",
-    "password": "密码"
+    "account": "账号",
+    "password": "密码"  
 }
 ```
 - return :
@@ -319,7 +323,11 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":null
+	 "data": 
+	 {
+	 "account":"账号"，
+	 "role":"0 企业用户 1 环保部门"
+	 }
 }
 ```
 ---
