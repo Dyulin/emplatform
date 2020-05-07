@@ -445,9 +445,7 @@ socket长连接
 ```json
 {
     "environmentalId": "环保人员id 选传",
-     "ename": "被监督企业名称 选传",
         "eid": "被监督企业id 选传",
-	"envName":"执法部门名称 选传",
 	"startTime":"开始时间 不选传个默认值",
 	"endTime":"结束时间不选 传至今",
 	}
