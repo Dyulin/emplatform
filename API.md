@@ -278,7 +278,7 @@ socket长连接
     }
 	"data": {
 	{
-	“recordId”:"异常记录编号",
+	"recordId":"异常记录编号",
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
@@ -295,7 +295,7 @@ socket长连接
 - payload :
 ```json
 {	
-	“recordId”:"异常记录编号",
+	"recordId":"异常记录编号",
 	"equId": "设施id",
 	"abnormalReason": "异常原因 选传",
 	"dealTime":"处理时间选传 需在异常发生时间之后 默认当前时间",
@@ -424,7 +424,7 @@ socket长连接
     "ename": "被监督企业名称",
     "eid": "被监督企业id",
     "time": "执法时间",
-    "lawEnforcementResult": "执法结果 文字",
+    "lawEnforcementResult":"执法结果 文字",
 }
 ```
 - return :
@@ -435,7 +435,7 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":null
+	"data":"1 插入成功"
 }
 ```
 ---
@@ -460,6 +460,7 @@ socket长连接
     }
 	"data": {
         {
+	"environmentalId":"环保人员id",
 	"recordId":"记录编号"	
 	"ename": "被监督企业名称",
         "eid": "被监督企业id",
@@ -475,7 +476,7 @@ socket长连接
 - POST  /lawEnforcementRecord/modifyRecord
 ```json
 {   
-	“recordId”:"记录编号"，	
+	"recordId":"记录编号"，	
    	"environmentalId": "环保人员id ",
     	"ename": "被监督企业名称",
     	"eid": "被监督企业id",
