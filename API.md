@@ -419,13 +419,13 @@ socket长连接
 ### 2.6.1 新增执法记录
 - POST  /lawEnforcementRecord/addRecord
 ```json
-{
+{    
     "environmentalId": "环保人员id ",
- 	"ename": "被监督企业名称",
+    "ename": "被监督企业名称",
     "eid": "被监督企业id",
     "time": "执法时间",
     "lawEnforcementResult": "执法结果 文字",
-	}
+}
 ```
 - return :
 ```json
@@ -459,7 +459,9 @@ socket长连接
         "returnUserMessage": "请求成功"
     }
 	"data": {
-        {"ename": "被监督企业名称",
+        {
+	"recordId":"记录编号"	
+	"ename": "被监督企业名称",
         "eid": "被监督企业id",
 	"envName":"执法部门名称",	
         "time": "执法时间",
@@ -467,4 +469,29 @@ socket长连接
 	{}
     }
 }
-
+```
+---
+### 2.6.1 修改执法记录
+- POST  /lawEnforcementRecord/modifyRecord
+```json
+{   
+	“recordId”:"记录编号"，	
+   	"environmentalId": "环保人员id ",
+    	"ename": "被监督企业名称",
+    	"eid": "被监督企业id",
+   	"time": "执法时间",
+    	"lawEnforcementResult": "执法结果 文字",
+}
+```
+- return :
+```json
+{
+    "error": {
+        "returnCode": 0,
+        "returnMessage": "请求成功",
+        "returnUserMessage": "请求成功"
+    }
+	"data":null
+}
+```
+---
