@@ -478,7 +478,6 @@ socket长连接
 {   
 	"recordId":"记录编号"，	
    	"environmentalId": "环保人员id ",
-    	"ename": "被监督企业名称",
     	"eid": "被监督企业id",
    	"time": "执法时间",
     	"lawEnforcementResult": "执法结果 文字",
