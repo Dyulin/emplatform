@@ -410,8 +410,8 @@ socket长连接
 清洗记录查询 同企业接口
 ## 2.5 异常管理
 异常记录查询 同企业接口
-##2.6 执法统计
-新增执法记录
+## 2.6 执法统计
+### 2.6.1 新增执法记录
 - POST  /lawEnforcementRecord/addRecord
 ```json
 {
@@ -434,7 +434,7 @@ socket长连接
 }
 ```
 ---
-执法记录查询
+### 2.6.2 执法记录查询
 - POST  /lawEnforcementRecord/showRecord
 - payload :
 ```json
