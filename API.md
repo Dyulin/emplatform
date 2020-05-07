@@ -73,6 +73,7 @@
 	 {
 	 "account":"账号",
 	 "role":"0 企业用户 1 环保部门"
+        "loginResult": "success/fail"
 	 }
 }
 ```
