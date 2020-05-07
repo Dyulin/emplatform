@@ -71,7 +71,7 @@
     }
 	 "data": 
 	 {
-	 "account":"账号"，
+	 "account":"账号",
 	 "role":"0 企业用户 1 环保部门"
 	 }
 }
@@ -130,13 +130,13 @@
     }
 }
 ```
-###1.2.3 新增环保设施
+### 1.2.3 新增环保设施
 
 - POST   /equipment/addEquipment
 ```json{
 {
     "eid": "企业id ",
-	"equId": "设施id 可以传多个以‘,’分隔 或者传单个id",
+    "equId": "设施id 可以传多个以‘,’分隔 或者传单个id",
 }
 ```
 ---
@@ -162,13 +162,14 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
+
 	"data": {
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
         "state": "设施状态值",
         "time": "时间",
-    }
+    },{},{}
 }
 ```
 ### 1.3.3 异常数据报警提醒
@@ -196,7 +197,7 @@ socket长连接
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
-    }
+    },{},{}
 }
 ```
 ### 1.4.1 查询历史清洗记录
@@ -219,11 +220,13 @@ socket长连接
         "returnUserMessage": "请求成功"
     }
 	"data": {
+	{
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
         "cleanTime": "时间",
-		"reason":"清洗原因"
+	"reason":"清洗原因"},
+	{}
     }
 }
 ```
@@ -274,6 +277,7 @@ socket长连接
         "returnUserMessage": "请求成功"
     }
 	"data": {
+	{
 	“recordId”:"异常记录编号",
         "ename": "企业名称",
         "eid": "企业id",
@@ -281,7 +285,8 @@ socket长连接
         "abnormalReason": "异常原因",
 	"isdeal":"是否处理完毕 同上"
 	"createTime":"发生时间"，
-	"dealTime":"当未处理时为0 处理时间"	
+	"dealTime":"当未处理时为0 处理时间"},
+	{}
     }
 }
 ```
@@ -440,6 +445,9 @@ socket长连接
 ```json
 {
     "environmentalId": "环保人员id 选传",
+     "ename": "被监督企业名称 选传",
+        "eid": "被监督企业id 选传",
+	"envName":"执法部门名称 选传",
 	"startTime":"开始时间 不选传个默认值",
 	"endTime":"结束时间不选 传至今",
 	}
@@ -453,11 +461,12 @@ socket长连接
         "returnUserMessage": "请求成功"
     }
 	"data": {
-        "ename": "被监督企业名称",
+        {"ename": "被监督企业名称",
         "eid": "被监督企业id",
 	"envName":"执法部门名称",	
         "time": "执法时间",
-        "lawEnforcementResult": "执法结果",
+        "lawEnforcementResult": "执法结果"},
+	{}
     }
 }
 
