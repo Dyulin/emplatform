@@ -69,10 +69,10 @@
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	 "data": 
+	 "data":
 	 {
 	 "account":"账号",
-	 "role":"0 企业用户 1 环保部门"
+	 "role":"0 企业用户 1 环保部门",
         "loginResult":"success/fail"
 	 }
 }
@@ -85,10 +85,10 @@
 ```json
 {  
 	"eid" :"企业id",
-    "type": "企业类型",
-    "name":"企业名称"
-    "oamCompany": "运维公司",
-	"level":"餐饮级别A/B/C,企业用户不可修改,环保部门可以"
+	"type": "企业类型",
+	"name":"企业名称"
+	"oamCompany":"运维公司",
+	"level":"餐饮级别A/B/C,企业用户不可修改,环保部门可以",
 	"area":"地区",
 	"password":"密码"
 }
@@ -101,7 +101,9 @@
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":null
+	"data":{
+	"result":"0 成功/ 1失败"
+	}
 }
 ```
 ### 1.2.2 查询档案
@@ -120,7 +122,7 @@
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data": {
+	"data":[{
         "eid": "001",
         "type": "类型",
         "name": "餐饮1",
@@ -128,7 +130,7 @@
         "level": "A",
         "equNum": "2",
         "area": "黑龙江省",
-    }
+    }]
 }
 ```
 ### 1.2.3 新增环保设施
@@ -140,6 +142,19 @@
     "equId": "设施id 可以传多个以‘,’分隔 或者传单个id",
 }
 ```
+- return :
+```json
+{
+    "error": {
+        "returnCode": 0,
+        "returnMessage": "请求成功",
+        "returnUserMessage": "请求成功"
+    }
+	"data":{
+	"result":"0 成功/1 失败"
+	}
+}
+```
 ---
 ## 1.3 数据监测
 ### 1.3.1 本企业实时数据查询
@@ -149,7 +164,7 @@ socket长连接
 - POST  /equipmentFlow/showDataByEid
 - payload :
 ```json{
-    "eid": "账号必须",
+    	"eid": "账号必须",
 	"startTime":"起始时间设默认时间",
 	"endTime":"结束时间至今"
 	"isRegular":"是否正常0正常 1 不正常"
@@ -163,14 +178,13 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-
-	"data": {
+	"data":[{
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
         "state": "设施状态值",
         "time": "时间",
-    },{},{}
+    }]
 }
 ```
 ### 1.3.3 异常数据报警提醒
@@ -194,11 +208,11 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data": {
+	"data":[{
         "ename": "企业名称",
         "eid": "企业id",
-        "equId": "设施id",
-    },{},{}
+        "equId": "设施id"
+    }]
 }
 ```
 ### 1.4.1 查询历史清洗记录
@@ -208,8 +222,10 @@ socket长连接
 {
     "eid": "企业账号必传",
 	"equId":"设备账号选传",
-	"startTime":"开始时间 不选传个默认值"
-	"endTime":"结束时间不选 传至今"
+	"startTime":"开始时间 不选传个默认值",
+	"endTime":"结束时间不选 传至今",
+	"pageNo":"当前页",
+	"pageSize":"显示条数"
 }
 ```
 - return :
@@ -220,14 +236,12 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data": {
-	{
+	"data":[{
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
         "cleanTime": "时间",
-	"reason":"清洗原因"},
-	{}
+	"reason":"清洗原因"}]
     }
 }
 ```
@@ -238,7 +252,7 @@ socket长连接
 {
     "eid": "企业账号必传",
 	"equId":"设备账号选传",
-	"cleanTime":"开始时间 不选传当前时间"
+	"cleanTime":"开始时间 不选传当前时间",
 	"reason":"清洗原因选传"
 }
 ```
@@ -250,9 +264,11 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":null
+	"data":{
+	"result":"0 成功/1 失败"
+	}
 }
-```
+```da
 ### 1.4.3 待清洗消息提醒
 长连接 待定
 ---
@@ -277,17 +293,16 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data": {
+	"data": [
 	{
 	"recordId":"异常记录编号",
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
         "abnormalReason": "异常原因",
-	"isdeal":"是否处理完毕 同上"
-	"createTime":"发生时间"，
-	"dealTime":"当未处理时为0 处理时间"},
-	{}
+	"isdeal":"是否处理完毕 同上",
+	"createTime":"发生时间",
+	"dealTime":"当未处理时为0 处理时间"}]
     }
 }
 ```
@@ -310,7 +325,9 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data": null
+	"data":{
+	"result":"0 成功/1 失败"
+	}
 }
 ```
 ---
@@ -334,8 +351,9 @@ socket长连接
     }
 	 "data": 
 	 {
-	 "account":"账号"，
-	 "role":"0 企业用户 1 环保部门"
+	 "account":"账号",
+	 "role":"0 企业用户 1 环保部门",
+	 "loginResult":"success/fail"
 	 }
 }
 ```
@@ -363,7 +381,7 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data": {
+	"data": [
 	{   "eid": "001",
         "type": "类型",
         "name": "餐饮1",
@@ -378,8 +396,8 @@ socket长连接
         "oamCompany": "A运维",
         "level": "A",
         "equNum": "2",
-        "area": "黑龙江省",}
-    }
+        "area": "黑龙江省"}
+    ]
 }
 ```
 /根据条件检索 同企业接口
@@ -391,9 +409,9 @@ socket长连接
 ```json
 {  
 	"eid" :"企业id",
-    "type": "企业类型",
+	"type": "企业类型",
 	"name":"企业名称"
-    "oamCompany": "运维公司",
+	"oamCompany":"运维公司",
 	"level":"餐饮级别A/B/C",
 	"area":"地区",
 	"password":"密码"
@@ -407,7 +425,9 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":null
+	"data":{
+	"result":"0 成功/ 1 失败"
+	}
 }
 ```
 
@@ -436,7 +456,9 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":"1 插入成功"
+	"data":{
+	"result":"0 成功/ 1 失败"
+	}
 }
 ```
 ---
@@ -460,15 +482,14 @@ socket长连接
         "returnUserMessage": "请求成功"
     }
 	"data": {
-        {
+        [
 	"environmentalId":"环保人员id",
 	"recordId":"记录编号"	
 	"ename": "被监督企业名称",
         "eid": "被监督企业id",
 	"envName":"执法部门名称",	
         "time": "执法时间",
-        "lawEnforcementResult": "执法结果"},
-	{}
+        "lawEnforcementResult": "执法结果"}]
     }
 }
 ```
@@ -492,7 +513,9 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     }
-	"data":null
+	"data":{
+	"result":"0 成功/ 1 失败"
+	}
 }
 ```
 ---
