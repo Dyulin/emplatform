@@ -68,13 +68,12 @@
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	 "data":
-	 {
+    },
+	 "data": {
 	 "account":"账号",
 	 "role":"0 企业用户 1 环保部门",
         "loginResult":"success/fail"
-	 }
+	}
 }
 ```
 ---
@@ -86,7 +85,7 @@
 {  
 	"eid" :"企业id",
 	"type": "企业类型",
-	"name":"企业名称"
+	"name":"企业名称",
 	"oamCompany":"运维公司",
 	"level":"餐饮级别A/B/C,企业用户不可修改,环保部门可以",
 	"area":"地区",
@@ -100,8 +99,8 @@
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":{
+    },
+	"data": {
 	"result":"0 成功/ 1失败"
 	}
 }
@@ -121,15 +120,15 @@
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":[{
+    },
+	"data": [{
         "eid": "001",
         "type": "类型",
         "name": "餐饮1",
         "oamCompany": "A运维",
         "level": "A",
         "equNum": "2",
-        "area": "黑龙江省",
+        "area": "黑龙江省"
     }]
 }
 ```
@@ -149,8 +148,8 @@
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":{
+    },
+	"data": {
 	"result":"0 成功/1 失败"
 	}
 }
@@ -177,8 +176,8 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":[{
+    },
+	"data": [{
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
@@ -207,8 +206,8 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":[{
+    },
+	"data": [{
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id"
@@ -235,8 +234,8 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":[{
+    },
+	"data": [{
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
@@ -263,12 +262,12 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":{
+    },
+	"data": {
 	"result":"0 成功/1 失败"
 	}
 }
-```da
+```
 ### 1.4.3 待清洗消息提醒
 长连接 待定
 ---
@@ -292,9 +291,8 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data": [
-	{
+    },
+	"data": [{
 	"recordId":"异常记录编号",
         "ename": "企业名称",
         "eid": "企业id",
@@ -324,8 +322,8 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	"data":{
+    },
+	"data": {
 	"result":"0 成功/1 失败"
 	}
 }
@@ -348,9 +346,8 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
-	 "data": 
-	 {
+    },
+	 "data": {
 	 "account":"账号",
 	 "role":"0 企业用户 1 环保部门",
 	 "loginResult":"success/fail"
@@ -380,7 +377,7 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
+    },
 	"data": [
 	{   "eid": "001",
         "type": "类型",
@@ -424,7 +421,7 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
+    },
 	"data":{
 	"result":"0 成功/ 1 失败"
 	}
@@ -455,7 +452,7 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
+    },
 	"data":{
 	"result":"0 成功/ 1 失败"
 	}
@@ -480,7 +477,7 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
+    },
 	"data": {
         [
 	"environmentalId":"环保人员id",
@@ -512,7 +509,7 @@ socket长连接
         "returnCode": 0,
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
-    }
+    },
 	"data":{
 	"result":"0 成功/ 1 失败"
 	}
