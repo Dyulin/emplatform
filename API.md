@@ -167,8 +167,8 @@ socket长连接
 	"startTime":"起始时间设默认时间",
 	"endTime":"结束时间至今"
 	"isRegular":"是否正常0正常 1 不正常",
-	"pageNo":"当前页",
-	"pageSize":"显示条数"
+	"pageNo":"当前页 从1开始",
+	"pageSize":"显示条数 默认20"
 }
 ```
 - return :
