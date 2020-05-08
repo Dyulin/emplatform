@@ -166,7 +166,9 @@ socket长连接
     	"eid": "账号必须",
 	"startTime":"起始时间设默认时间",
 	"endTime":"结束时间至今"
-	"isRegular":"是否正常0正常 1 不正常"
+	"isRegular":"是否正常0正常 1 不正常",
+	"pageNo":"当前页",
+	"pageSize":"显示条数"
 }
 ```
 - return :
@@ -407,7 +409,7 @@ socket长连接
 {  
 	"eid" :"企业id",
 	"type": "企业类型",
-	"name":"企业名称"
+	"name":"企业名称",
 	"oamCompany":"运维公司",
 	"level":"餐饮级别A/B/C",
 	"area":"地区",
@@ -479,14 +481,13 @@ socket长连接
         "returnUserMessage": "请求成功"
     },
 	"data": {
-        [
 	"environmentalId":"环保人员id",
 	"recordId":"记录编号"	
 	"ename": "被监督企业名称",
         "eid": "被监督企业id",
 	"envName":"执法部门名称",	
         "time": "执法时间",
-        "lawEnforcementResult": "执法结果"}]
+        "lawEnforcementResult": "执法结果"
     }
 }
 ```
@@ -495,8 +496,8 @@ socket长连接
 - POST  /lawEnforcementRecord/modifyRecord
 ```json
 {   
-	"recordId":"记录编号"，	
-   	"environmentalId": "环保人员id ",
+	"recordId":"记录编号",
+   	"environmentalId":"环保人员id ",
     	"eid": "被监督企业id",
    	"time": "执法时间",
     	"lawEnforcementResult": "执法结果 文字",
