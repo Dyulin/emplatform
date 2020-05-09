@@ -215,29 +215,15 @@ socket长连接
         "returnUserMessage": "请求成功"
     },
     "data": {
-        "001": [
-            {
-                "id": null,
-                "eid": "001",
-                "equId": "A1",
-                "ename": "餐饮1"
-            },
-            {
-                "id": null,
-                "eid": "001",
-                "equId": "A2",
-                "ename": "餐饮1"
-            }
-        ],
-        "002": [
-            {
-                "id": null,
-                "eid": "002",
-                "equId": "A3",
-                "ename": "餐饮2"
-            }
-        ]
-    }
+    [{
+    "label":"企业名称",
+    "value":"企业Id",
+    "children":[{
+    	"label":"设备名称",
+	"value":"设备Id"
+    	}]
+    }]
+}
 }
 ```
 ### 1.4.1 查询历史清洗记录
@@ -249,8 +235,6 @@ socket长连接
 	"equId":"设备账号选传",
 	"startTime":"开始时间 不选传个默认值",
 	"endTime":"结束时间不选 传至今",
-	"pageNo":"当前页",
-	"pageSize":"显示条数"
 }
 ```
 - return :
@@ -414,14 +398,17 @@ socket长连接
         "level": "A",
         "equNum": "2",
         "area": "黑龙江省",
+	"password":"密码"
 	},
-	{	"eid": "001",
+	{	
+	"eid": "001",
         "type": "类型",
         "name": "餐饮1",
         "oamCompany": "A运维",
         "level": "A",
         "equNum": "2",
-        "area": "黑龙江省"}
+        "area": "黑龙江省".
+	"password":"密码"}
     ]
 }
 ```
