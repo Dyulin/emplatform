@@ -534,3 +534,24 @@ socket长连接
 }
 ```
 ---
+### 2.7 获取所有环保部门信息
+- GET /environmental/showEnvData
+- return :
+```json
+{
+    "error": {
+        "returnCode": 0,
+        "returnMessage": "请求成功",
+        "returnUserMessage": "请求成功"
+    },
+	 "data": [
+        {
+            "id": 1,
+            "environmentalId": "H1",
+            "area": "黑龙江省",
+            "name": "环保局"
+        }
+    ]
+}
+```
+---
