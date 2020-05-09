@@ -197,9 +197,7 @@ socket长连接
 - POST  /equipment/showEquData
 - payload :
 ```json
-{
-    "eid": "企业账号必传",
-}
+
 ```
 - return :
 ```json
@@ -209,11 +207,30 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     },
-	"data": [{
-        "ename": "企业名称",
-        "eid": "企业id",
-        "equId": "设施id"
-    }]
+    "data": {
+        "001": [
+            {
+                "id": null,
+                "eid": "001",
+                "equId": "A1",
+                "ename": "餐饮1"
+            },
+            {
+                "id": null,
+                "eid": "001",
+                "equId": "A2",
+                "ename": "餐饮1"
+            }
+        ],
+        "002": [
+            {
+                "id": null,
+                "eid": "002",
+                "equId": "A3",
+                "ename": "餐饮2"
+            }
+        ]
+    }
 }
 ```
 ### 1.4.1 查询历史清洗记录
