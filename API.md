@@ -253,7 +253,7 @@ socket长连接
 }
 ```
 ### 1.4.2 新增清洗记录
-- POST  /equipmentFlow/showEquCleanData
+- POST  /equipmentFlow/addEquCleanData
 - payload :
 ```json
 {
