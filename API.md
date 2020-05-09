@@ -214,8 +214,7 @@ socket长连接
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     },
-    "data": {
-    [{
+    "data": [{
     "label":"企业名称",
     "value":"企业Id",
     "children":[{
@@ -223,7 +222,6 @@ socket长连接
 	"value":"设备Id"
     	}]
     }]
-}
 }
 ```
 ### 1.4.1 查询历史清洗记录
@@ -407,7 +405,7 @@ socket长连接
         "oamCompany": "A运维",
         "level": "A",
         "equNum": "2",
-        "area": "黑龙江省".
+        "area": "黑龙江省",
 	"password":"密码"}
     ]
 }
@@ -495,7 +493,7 @@ socket长连接
     },
 	"data": {
 	"environmentalId":"环保人员id",
-	"recordId":"记录编号"	
+	"recordId":"记录编号",	
 	"ename": "被监督企业名称",
         "eid": "被监督企业id",
 	"envName":"执法部门名称",	
