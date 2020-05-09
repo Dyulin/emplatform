@@ -92,7 +92,7 @@
 {  
 	"eid" :"企业id",
 	"type": "企业类型",
-	"name":"企业名称",
+	"ename":"企业名称",
 	"oamCompany":"运维公司",
 	"level":"餐饮级别A/B/C,企业用户不可修改,环保部门可以",
 	"area":"地区",
@@ -131,7 +131,7 @@
 	"data": [{
         "eid": "001",
         "type": "类型",
-        "name": "餐饮1",
+        "ename": "餐饮1",
         "oamCompany": "A运维",
         "level": "A",
         "equNum": "2",
@@ -307,7 +307,9 @@ socket长连接
 	"equId":"设备账号选传",
 	"startTime":"开始时间 不选传个默认值",
 	"endTime":"结束时间不选 传至今",
-	"isdeal":"是否处理完毕 0 未处理 1 处理 2都要"
+	"isdeal":"是否处理完毕 0 未处理 1 处理 2都要",
+	"pageNo":"当前页 从1开始",
+	"pageSize":"显示条数 默认20"
 	}
 ```
 - return :
