@@ -213,6 +213,7 @@
 }
 ```
 ### 1.3.3 异常数据报警提醒
+- 查询历史报警信息
 - POST /message/getMessage
 - payload
 ```json
