@@ -203,13 +203,16 @@
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     },
-	"data": [{
+	"data":{
+	"total":"总页数",
+	"data":[{
         "ename": "企业名称",
         "eid": "企业id",
         "equId": "设施id",
         "state": "设施状态值",
         "time": "时间",
     }]
+    }
 }
 ```
 ### 1.3.3 异常数据报警提醒
@@ -364,7 +367,10 @@
         "returnMessage": "请求成功",
         "returnUserMessage": "请求成功"
     },
-	"data": [{
+	"data": 
+	{
+	"total":"总页数",
+	"data":[{
 	"recordId":"异常记录编号",
         "ename": "企业名称",
         "eid": "企业id",
@@ -373,6 +379,7 @@
 	"isdeal":"是否处理完毕 同上",
 	"createTime":"发生时间",
 	"dealTime":"当未处理时为0 处理时间"}]
+    }
     }
 }
 ```
