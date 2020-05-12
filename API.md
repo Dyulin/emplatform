@@ -88,7 +88,8 @@
 	 "data": {
 	 "account":"账号",
 	 "role":"0 企业用户 1 环保部门",
-        "loginResult":"success/fail"
+        "loginResult":"success/fail",
+	"name":"名字"
 	}
 }
 ```
@@ -239,7 +240,7 @@
 	}]	
 }
 ```
-- 订阅地址"/user/"+eid+"/point/abnormalDataAlarm"返回字符串数组
+- 订阅地址"/user/"+eid+"/point/abnormalDataAlarm" 同上
 ---
 ## 1.4 清洗管理
 ### 1.4.0 获取所有企业设备信息
@@ -342,7 +343,7 @@
 	}]	
 }
 ```
-- 订阅地址"/user/"+eid+"/point/cleanDataAlarm"返回字符串数组
+- 订阅地址"/user/"+eid+"/point/cleanDataAlarm"同上
 ---
 ## 1.5 异常管理
 ### 1.5.1 异常查询
